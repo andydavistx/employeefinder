@@ -9,8 +9,9 @@ router.get("/api/employees", function(req,res){
 
 
 router.post("/api/employees", function(req,res){
-    res.send(req.body);
-
+    let randomUser = Math.floor(Math.random() * employeeList.length)
+    console.log(employeeList[0])
+   res.json(employeeList[randomUser]);
 });
 
 
