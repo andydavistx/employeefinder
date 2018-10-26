@@ -23,7 +23,6 @@ $(function(){
   
       
       $('#match-name').text(data.name);
-      $('#match-img').attr('src', data.photo);
   
       
       $('#results-modal').modal('toggle');
@@ -38,7 +37,6 @@ $(function(){
         
         const userData = {
           name: $('#name').val().trim(),
-          photo: $('#photo').val().trim(),
           scores: [
             $('#q1').val(),
             $('#q2').val(),
